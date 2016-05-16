@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'manufacturers';
+    src:    url('fonts/manufacturers.eot?jmw772');
+    src:    url('fonts/manufacturers.eot?jmw772#iefix') format('embedded-opentype'),
+        url('fonts/manufacturers.ttf?jmw772') format('truetype'),
+        url('fonts/manufacturers.woff?jmw772') format('woff'),
+        url('fonts/manufacturers.svg?jmw772#manufacturers') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'manufacturers' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bharatbenz:before {
+    content: "\e900";
+}
+.icon-hm .path1:before {
+    content: "\e901";
+    color: rgb(232, 232, 232);
+}
+.icon-hm .path2:before {
+    content: "\e902";
+    margin-left: -0.70703125em;
+    color: rgb(207, 207, 207);
+}
+.icon-hm .path3:before {
+    content: "\e903";
+    margin-left: -0.70703125em;
+    color: rgb(175, 175, 175);
+}
+.icon-hm .path4:before {
+    content: "\e904";
+    margin-left: -0.70703125em;
+    color: rgb(145, 145, 145);
+}
+.icon-hm .path5:before {
+    content: "\e905";
+    margin-left: -0.70703125em;
+    color: rgb(110, 110, 110);
+}
+.icon-hm .path6:before {
+    content: "\e906";
+    margin-left: -0.70703125em;
+    color: rgb(86, 86, 86);
+}
+.icon-hm .path7:before {
+    content: "\e907";
+    margin-left: -0.70703125em;
+    color: rgb(74, 74, 74);
+}
+.icon-amw .path1:before {
+    content: "\e908";
+    color: rgb(230, 230, 230);
+}
+.icon-amw .path2:before {
+    content: "\e909";
+    margin-left: -0.71875em;
+    color: rgb(208, 208, 208);
+}
+.icon-amw .path3:before {
+    content: "\e90a";
+    margin-left: -0.71875em;
+    color: rgb(178, 178, 178);
+}
+.icon-amw .path4:before {
+    content: "\e90b";
+    margin-left: -0.71875em;
+    color: rgb(135, 135, 135);
+}
+.icon-amw .path5:before {
+    content: "\e90c";
+    margin-left: -0.71875em;
+    color: rgb(108, 108, 108);
+}
+.icon-amw .path6:before {
+    content: "\e90d";
+    margin-left: -0.71875em;
+    color: rgb(86, 86, 86);
+}
+.icon-amw .path7:before {
+    content: "\e90e";
+    margin-left: -0.71875em;
+    color: rgb(75, 75, 75);
+}
+.icon-daf .path1:before {
+    content: "\e90f";
+    color: rgb(204, 204, 204);
+}
+.icon-daf .path2:before {
+    content: "\e910";
+    margin-left: -0.71875em;
+    color: rgb(175, 175, 175);
+}
+.icon-daf .path3:before {
+    content: "\e911";
+    margin-left: -0.71875em;
+    color: rgb(139, 139, 139);
+}
+.icon-daf .path4:before {
+    content: "\e912";
+    margin-left: -0.71875em;
+    color: rgb(109, 109, 109);
+}
+.icon-daf .path5:before {
+    content: "\e913";
+    margin-left: -0.71875em;
+    color: rgb(77, 77, 77);
+}
+.icon-daf .path6:before {
+    content: "\e914";
+    margin-left: -0.71875em;
+    color: rgb(42, 42, 42);
+}
+.icon-daf .path7:before {
+    content: "\e915";
+    margin-left: -0.71875em;
+    color: rgb(30, 30, 30);
+}
+.icon-volvo .path1:before {
+    content: "\e916";
+    color: rgb(228, 228, 228);
+}
+.icon-volvo .path2:before {
+    content: "\e917";
+    margin-left: -0.71875em;
+    color: rgb(209, 209, 209);
+}
+.icon-volvo .path3:before {
+    content: "\e918";
+    margin-left: -0.71875em;
+    color: rgb(175, 175, 175);
+}
+.icon-volvo .path4:before {
+    content: "\e919";
+    margin-left: -0.71875em;
+    color: rgb(144, 144, 144);
+}
+.icon-volvo .path5:before {
+    content: "\e91a";
+    margin-left: -0.71875em;
+    color: rgb(111, 111, 111);
+}
+.icon-volvo .path6:before {
+    content: "\e91b";
+    margin-left: -0.71875em;
+    color: rgb(73, 73, 73);
+}
+.icon-volvo .path7:before {
+    content: "\e91c";
+    margin-left: -0.71875em;
+    color: rgb(44, 44, 44);
+}
+.icon-tata .path1:before {
+    content: "\e91d";
+    color: rgb(230, 230, 230);
+}
+.icon-tata .path2:before {
+    content: "\e91e";
+    margin-left: -0.71875em;
+    color: rgb(209, 209, 209);
+}
+.icon-tata .path3:before {
+    content: "\e91f";
+    margin-left: -0.71875em;
+    color: rgb(176, 176, 176);
+}
+.icon-tata .path4:before {
+    content: "\e920";
+    margin-left: -0.71875em;
+    color: rgb(149, 149, 149);
+}
+.icon-tata .path5:before {
+    content: "\e921";
+    margin-left: -0.71875em;
+    color: rgb(136, 136, 136);
+}
+.icon-tata .path6:before {
+    content: "\e922";
+    margin-left: -0.71875em;
+    color: rgb(118, 118, 118);
+}
+.icon-tata .path7:before {
+    content: "\e923";
+    margin-left: -0.71875em;
+    color: rgb(99, 99, 99);
+}
+.icon-man .path1:before {
+    content: "\e924";
+    color: rgb(209, 209, 209);
+}
+.icon-man .path2:before {
+    content: "\e925";
+    margin-left: -0.71875em;
+    color: rgb(176, 176, 176);
+}
+.icon-man .path3:before {
+    content: "\e926";
+    margin-left: -0.71875em;
+    color: rgb(142, 142, 142);
+}
+.icon-man .path4:before {
+    content: "\e927";
+    margin-left: -0.71875em;
+    color: rgb(115, 115, 115);
+}
+.icon-man .path5:before {
+    content: "\e928";
+    margin-left: -0.71875em;
+    color: rgb(80, 80, 80);
+}
+.icon-man .path6:before {
+    content: "\e929";
+    margin-left: -0.71875em;
+    color: rgb(46, 46, 46);
+}
+.icon-man .path7:before {
+    content: "\e92a";
+    margin-left: -0.71875em;
+    color: rgb(25, 25, 25);
+}
+.icon-force .path1:before {
+    content: "\e92b";
+    color: rgb(174, 174, 174);
+}
+.icon-force .path2:before {
+    content: "\e92c";
+    margin-left: -0.71875em;
+    color: rgb(98, 98, 98);
+}
+.icon-force .path3:before {
+    content: "\e92d";
+    margin-left: -0.71875em;
+    color: rgb(40, 40, 40);
+}
+.icon-force .path4:before {
+    content: "\e92e";
+    margin-left: -0.71875em;
+    color: rgb(207, 207, 207);
+}
+.icon-force .path5:before {
+    content: "\e92f";
+    margin-left: -0.71875em;
+    color: rgb(142, 142, 142);
+}
+.icon-force .path6:before {
+    content: "\e930";
+    margin-left: -0.71875em;
+    color: rgb(91, 91, 91);
+}
+.icon-force .path7:before {
+    content: "\e931";
+    margin-left: -0.71875em;
+    color: rgb(17, 17, 17);
+}
+.icon-kamaz .path1:before {
+    content: "\e932";
+    color: rgb(209, 209, 209);
+}
+.icon-kamaz .path2:before {
+    content: "\e933";
+    margin-left: -0.71875em;
+    color: rgb(172, 172, 172);
+}
+.icon-kamaz .path3:before {
+    content: "\e934";
+    margin-left: -0.71875em;
+    color: rgb(141, 141, 141);
+}
+.icon-kamaz .path4:before {
+    content: "\e935";
+    margin-left: -0.71875em;
+    color: rgb(111, 111, 111);
+}
+.icon-kamaz .path5:before {
+    content: "\e936";
+    margin-left: -0.71875em;
+    color: rgb(79, 79, 79);
+}
+.icon-kamaz .path6:before {
+    content: "\e937";
+    margin-left: -0.71875em;
+    color: rgb(44, 44, 44);
+}
+.icon-kamaz .path7:before {
+    content: "\e938";
+    margin-left: -0.71875em;
+    color: rgb(6, 6, 6);
+}
+.icon-mahindra .path1:before {
+    content: "\e939";
+    color: rgb(231, 231, 231);
+}
+.icon-mahindra .path2:before {
+    content: "\e93a";
+    margin-left: -0.71875em;
+    color: rgb(207, 207, 207);
+}
+.icon-mahindra .path3:before {
+    content: "\e93b";
+    margin-left: -0.71875em;
+    color: rgb(175, 175, 175);
+}
+.icon-mahindra .path4:before {
+    content: "\e93c";
+    margin-left: -0.71875em;
+    color: rgb(151, 151, 151);
+}
+.icon-mahindra .path5:before {
+    content: "\e93d";
+    margin-left: -0.71875em;
+    color: rgb(135, 135, 135);
+}
+.icon-mahindra .path6:before {
+    content: "\e93e";
+    margin-left: -0.71875em;
+    color: rgb(118, 118, 118);
+}
+.icon-mahindra .path7:before {
+    content: "\e93f";
+    margin-left: -0.71875em;
+    color: rgb(100, 100, 100);
+}
+.icon-isuzu .path1:before {
+    content: "\e940";
+    color: rgb(232, 232, 232);
+}
+.icon-isuzu .path2:before {
+    content: "\e941";
+    margin-left: -0.71875em;
+    color: rgb(206, 206, 206);
+}
+.icon-isuzu .path3:before {
+    content: "\e942";
+    margin-left: -0.71875em;
+    color: rgb(175, 175, 175);
+}
+.icon-isuzu .path4:before {
+    content: "\e943";
+    margin-left: -0.71875em;
+    color: rgb(143, 143, 143);
+}
+.icon-isuzu .path5:before {
+    content: "\e944";
+    margin-left: -0.71875em;
+    color: rgb(110, 110, 110);
+}
+.icon-isuzu .path6:before {
+    content: "\e945";
+    margin-left: -0.71875em;
+    color: rgb(85, 85, 85);
+}
+.icon-isuzu .path7:before {
+    content: "\e946";
+    margin-left: -0.71875em;
+    color: rgb(77, 77, 77);
+}
+.icon-hino .path1:before {
+    content: "\e947";
+    color: rgb(207, 207, 207);
+}
+.icon-hino .path2:before {
+    content: "\e948";
+    margin-left: -0.71875em;
+    color: rgb(176, 176, 176);
+}
+.icon-hino .path3:before {
+    content: "\e949";
+    margin-left: -0.71875em;
+    color: rgb(144, 144, 144);
+}
+.icon-hino .path4:before {
+    content: "\e94a";
+    margin-left: -0.71875em;
+    color: rgb(112, 112, 112);
+}
+.icon-hino .path5:before {
+    content: "\e94b";
+    margin-left: -0.71875em;
+    color: rgb(76, 76, 76);
+}
+.icon-hino .path6:before {
+    content: "\e94c";
+    margin-left: -0.71875em;
+    color: rgb(36, 36, 36);
+}
+.icon-hino .path7:before {
+    content: "\e94d";
+    margin-left: -0.71875em;
+    color: rgb(29, 29, 29);
+}
+.icon-ashokleyland:before {
+    content: "\e94e";
+}
+.icon-eicher:before {
+    content: "\e94f";
+}
+
