@@ -1959,7 +1959,7 @@ a.bg-gray:focus {
   color: #877878;
 }
 .text-black {
-  color: #1d1818;
+  color: #1d1818 !important;
 }
 .inline {
   display: inline-block;
