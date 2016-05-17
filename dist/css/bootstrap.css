@@ -6393,15 +6393,18 @@ button.list-group-item-danger.active:focus {
   display: inline-block;
 }
 ul.manufacturers,
+ul.vehicle-type,
 ul.models {
   margin-top: 12px;
   padding: 12px 0;
 }
 ul.manufacturers > div,
+ul.vehicle-type > div,
 ul.models > div {
   vertical-align: bottom;
 }
 ul.manufacturers li,
+ul.vehicle-type li,
 ul.models li {
   overflow: hidden;
   opacity: 0.8;
@@ -6413,20 +6416,27 @@ ul.models li {
   cursor: pointer;
 }
 ul.manufacturers li + small,
+ul.vehicle-type li + small,
 ul.models li + small,
 ul.manufacturers li + h1,
+ul.vehicle-type li + h1,
 ul.models li + h1,
 ul.manufacturers li + h2,
+ul.vehicle-type li + h2,
 ul.models li + h2,
 ul.manufacturers li + h3,
+ul.vehicle-type li + h3,
 ul.models li + h3,
 ul.manufacturers li + h4,
+ul.vehicle-type li + h4,
 ul.models li + h4,
 ul.manufacturers li + h5,
+ul.vehicle-type li + h5,
 ul.models li + h5 {
   text-align: center;
 }
 ul.manufacturers li + small,
+ul.vehicle-type li + small,
 ul.models li + small {
   display: block;
   margin-bottom: 12px;
@@ -6436,19 +6446,23 @@ ul.models li + small {
   white-space: nowrap;
 }
 ul.manufacturers li > label,
+ul.vehicle-type li > label,
 ul.models li > label {
   padding-left: 0;
 }
 ul.manufacturers li > label > span,
+ul.vehicle-type li > label > span,
 ul.models li > label > span {
   font-size: 6em;
   color: #fffaf9;
 }
 ul.manufacturers li:hover,
+ul.vehicle-type li:hover,
 ul.models li:hover {
   opacity: 0.9;
 }
 ul.manufacturers li.active,
+ul.vehicle-type li.active,
 ul.models li.active {
   opacity: 1;
   border-color: #e1b034;

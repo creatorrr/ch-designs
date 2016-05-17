@@ -52,7 +52,7 @@
   <body>
 
     <!-- Page content of course! -->
-    <div class="wrapper post-sell-listing bg-gray">
+    <div class="wrapper post-buy-listing bg-gray">
 
   <nav class="navbar navbar-default navbar-inverse navbar-static-top">
   <div class="container-fluid">
@@ -113,7 +113,7 @@
       </h1>
     </div>
 
-    <ul id="sell-tabs" class="nav nav-tabs" role="tablist">
+    <ul id="buy-tabs" class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active">
         <a href="#vehicle-type" aria-controls="vehicle-type" role="tab" data-toggle="tab"> <span class="badge"> 1 </span> Vehicle type </a>
 
@@ -136,13 +136,87 @@
     </ul>
 
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="manufacturer">
+      <div role="tabpanel" class="tab-pane active" id="vehicle-type">
+        <ul class="vehicle-type list-inline">
+  
+  <div id="truck-selector">
+    <li  class="active" >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="truck"  checked="checked" >
+        <span class="icon-high-side-deck-truck"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Truck </strong> </small>
+  </div>
+  
+  <div id="trailer-selector">
+    <li >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="trailer" >
+        <span class="icon-car-carrier-trailer"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Trailer </strong> </small>
+  </div>
+  
+  <div id="dumper-selector">
+    <li >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="dumper" >
+        <span class="icon-tipper-truck"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Dumper </strong> </small>
+  </div>
+  
+  <div id="transit_mixer-selector">
+    <li >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="transit_mixer" >
+        <span class="icon-transit-mixer-truck"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Transit Mixer </strong> </small>
+  </div>
+  
+  <div id="bulker-selector">
+    <li >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="bulker" >
+        <span class="icon-bulker-truck"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Bulker </strong> </small>
+  </div>
+  
+  <div id="tanker-selector">
+    <li >
+      <label class="radio-inline">
+        <input type="radio" name="vehicleTypeId" class="hidden" value="tanker" >
+        <span class="icon-tanker-truck"></span>
+      </label>
+    </li>
+
+    <small class="text-uppercase text-center"> <strong> Tanker </strong> </small>
+  </div>
+  
+</ul>
+
+
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="manufacturers">
         <ul class="manufacturers list-inline">
   
   <div id="eicher-selector">
     <li  class="active" >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="eicher"  checked="checked" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="eicher"  checked="checked" >
         <span class="manufacturer-eicher"></span>
       </label>
     </li>
@@ -152,8 +226,8 @@
   
   <div id="bharat_benz-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="bharat_benz" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="bharat_benz" >
         <span class="manufacturer-bharat_benz"></span>
       </label>
     </li>
@@ -163,8 +237,8 @@
   
   <div id="ashok_leyland-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="ashok_leyland" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="ashok_leyland" >
         <span class="manufacturer-ashok_leyland"></span>
       </label>
     </li>
@@ -174,8 +248,8 @@
   
   <div id="amw-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="amw" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="amw" >
         <span class="manufacturer-amw"></span>
       </label>
     </li>
@@ -185,8 +259,8 @@
   
   <div id="hino-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="hino" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="hino" >
         <span class="manufacturer-hino"></span>
       </label>
     </li>
@@ -196,8 +270,8 @@
   
   <div id="kamaz-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="kamaz" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="kamaz" >
         <span class="manufacturer-kamaz"></span>
       </label>
     </li>
@@ -207,8 +281,8 @@
   
   <div id="sml_isuzu-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="sml_isuzu" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="sml_isuzu" >
         <span class="manufacturer-sml_isuzu"></span>
       </label>
     </li>
@@ -218,8 +292,8 @@
   
   <div id="daf-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="daf" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="daf" >
         <span class="manufacturer-daf"></span>
       </label>
     </li>
@@ -229,8 +303,8 @@
   
   <div id="man-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="man" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="man" >
         <span class="manufacturer-man"></span>
       </label>
     </li>
@@ -240,8 +314,8 @@
   
   <div id="mahindra-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="mahindra" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="mahindra" >
         <span class="manufacturer-mahindra"></span>
       </label>
     </li>
@@ -251,8 +325,8 @@
   
   <div id="volvo-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="volvo" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="volvo" >
         <span class="manufacturer-volvo"></span>
       </label>
     </li>
@@ -262,8 +336,8 @@
   
   <div id="tata-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="tata" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="tata" >
         <span class="manufacturer-tata"></span>
       </label>
     </li>
@@ -273,8 +347,8 @@
   
   <div id="hindustan_motors-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="hindustan_motors" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="hindustan_motors" >
         <span class="manufacturer-hindustan_motors"></span>
       </label>
     </li>
@@ -284,8 +358,8 @@
   
   <div id="force-selector">
     <li >
-      <label class="radio-inline">
-        <input type="radio" name="manufacturerId" class="hidden" value="force" >
+      <label class="checkbox-inline">
+        <input type="checkbox" name="manufacturerId" class="hidden" value="force" >
         <span class="manufacturer-force"></span>
       </label>
     </li>
@@ -295,671 +369,63 @@
   
 </ul>
 
-      </div>
-
-      <div role="tabpanel" class="tab-pane" id="model">
-        <ul class="models list-inline">
-  
-  
-  <div id="1-selector">
-    <li  class="active" >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="1"  checked="checked" >
-        <img class="model-10.5" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 10.5 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="2-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="2" >
-        <img class="model-10.59" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 10.59 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="3-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="3" >
-        <img class="model-10.75" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 10.75 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="4-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="4" >
-        <img class="model-10.9" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 10.9 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="5-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="5" >
-        <img class="model-11.1" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 11.1 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="6-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="6" >
-        <img class="model-11.14" src="http://res.cloudinary.com/dl5jiwowi/image/upload/xnpn8l5qquhzucxvfz0g">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 11.14 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="7-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="7" >
-        <img class="model-20.16" src="http://res.cloudinary.com/dl5jiwowi/image/upload/asa86hvgcesgzbel7y8t">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 20.16 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="8-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="8" >
-        <img class="model-35.31" src="http://res.cloudinary.com/dl5jiwowi/image/upload/jofhiphrzvwiq9gpelui">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 35.31 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="9-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="9" >
-        <img class="model-40.4" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher 40.4 </strong> </small>
-  </div>
-  
-  
-  
-  <div id="10-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="modelId" class="hidden" value="10" >
-        <img class="model-914" src="http://res.cloudinary.com/dl5jiwowi/image/upload/kycvqlsil85tisoiwo5u">
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Bharat Benz 914 </strong> </small>
-  </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</ul>
-
 
       </div>
 
-      <div role="tabpanel" class="tab-pane" id="vehicle-details">
+      <div role="tabpanel" class="tab-pane" id="price-range">
         <form class="sell-details form-horizontal">
   <div class="section">
     <h4 class="text-uppercase col-sm-offset-2"> Body type </h4>
     <hr class="col-sm-8 col-sm-offset-2 hidden-xs">
 
     <div class="form-group">
-      <div class="col-sm-offset-3 col-sm-6">
-        <div class="control">
-  <span class="btn text-capitalize"  disabled="disabled"> Vehicle type: </span>
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="control tooltip-inverted">
+  <strong class="text-capitalize"> Price range <sub> (In Lakhs) </sub>: </strong>
 
-  <div class="btn-group">
-
-    <button class="btn large-padding btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-      <span class="icon icon-large icon-platform-body-truck text-primary" aria-hidden="true"></span>
-      Truck
-      <span class="caret"></span>
-    </button>
-
-    <ul class="dropdown-menu">
-      <li class="disabled"><a href="#">
-        Truck
-        <span class="icon icon-platform-body-truck icon-large pull-right" aria-hidden="true"></span>
-      </a></li>
-
-      <li><a href="#">
-        Trailer
-        <span class="icon icon-flat-bed-trailer icon-large pull-right" aria-hidden="true"></span>
-      </a></li>
-
-      <li><a href="#">
-        Bus
-        <span class="glyphicon glyphicon-bed pull-right" aria-hidden="true"></span>
-      </a></li>
-
-      <li><a href="#">
-        Horse
-        <span class="icon icon-horse icon-large pull-right" aria-hidden="true"></span>
-      </a></li>
-    </ul>
-  </div>
+  <span class="pull-right">
+    <input
+      class="pull-right"
+      type="number"
+      name="price_range"
+      data-provide="slider"
+      data-slider-min="3.0"
+      data-slider-max="20.0"
+      data-slider-step="0.5"
+      data-slider-value="[6.0, 12.0]"
+      data-slider-tooltip="always"
+      data-slider-tooltip-split="true"
+      data-slider-tooltip-position="bottom"
+    >
+  </span>
 </div>
+<div class="clearfix"></div>
 
 
       </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h4 class="text-uppercase col-sm-offset-2"> Vehicle paper details </h4>
+    <br>
+    <h4 class="text-uppercase col-sm-offset-2"> Notifications for matching vehicles </h4>
     <hr class="col-sm-8 col-sm-offset-2 hidden-xs">
+
     <div class="form-group">
-      <label for="inputEmail3" class="text-capitalize col-sm-2 col-sm-offset-2 control-label">Registration number</label>
-      <div class="col-sm-6">
-        <input required type="text" class="form-control" id="inputEmail3" placeholder="Registration number">
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            My budget is flexible. Please notify me of other good deals <strong> close to </strong> but outside this range.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Please notify me of vehicles <strong> only </strong> within this range.
+          </label>
+        </div>
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="inputEmail3" class="text-capitalize col-sm-2 col-sm-offset-2 control-label">Chassis number</label>
-      <div class="col-sm-6">
-        <input required type="number" class="form-control" id="inputEmail3" placeholder="Chassis number">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="inputEmail3" class="text-capitalize col-sm-2 col-sm-offset-2 control-label">Engine number</label>
-      <div class="col-sm-6">
-        <input required type="number" class="form-control" id="inputEmail3" placeholder="Engine number">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="inputEmail3" class="text-capitalize col-sm-2 col-sm-offset-2 control-label">Policy number</label>
-      <div class="col-sm-6">
-        <input required type="text" class="form-control" id="inputEmail3" placeholder="Policy number">
-      </div>
-    </div>
   </div>
 </form>
 
@@ -1137,7 +603,7 @@
 <script>
 
 $("#user-details form").on("submit", function (e) {
-  $("#sell-tabs a").last().tab('show');
+  $("#buy-tabs a").last().tab('show');
   updateProgress(100);
 
   return false;
@@ -1148,31 +614,31 @@ function updateProgress(pc) {
   $(".progress-bar").css("width", pc+'%');
 }
 
-$('#sell-tabs a').click(function (e) {
+$('#buy-tabs a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
 
-$("#manufacturer").on("click", "li", function (e) {
+$(".post-buy-listing #manufacturers").on("click", "li", function (e) {
   var target = $(this),
-    input = target.find('input[type=radio]'),
+    input = target.find('input[type=checkbox]'),
     checked = input.attr("checked"),
     manufacturer = input.val();
 
-  $("#manufacturer ul li").removeClass("active");
-  $("#manufacturer ul > div#" + manufacturer + "-selector > li").addClass("active");
+  $(".post-buy-listing #manufacturers ul > div#" + manufacturer + "-selector > li").toggleClass("active");
 
   input.attr("checked", !checked);
+  return false;
 });
 
-$("#model").on("click", "li", function (e) {
+$(".post-buy-listing #vehicle-type").on("click", "li", function (e) {
   var target = $(this),
     input = target.find('input[type=radio]'),
     checked = input.attr("checked"),
-    model = input.val();
+    vType = input.val();
 
-  $("#model ul li").removeClass("active");
-  $("#model ul > div#" + model + "-selector > li").addClass("active");
+  $(".post-buy-listing #vehicle-type ul li").removeClass("active");
+  $(".post-buy-listing #vehicle-type ul > div#" + vType + "-selector > li").addClass("active");
 
   input.attr("checked", !checked);
 });
@@ -1181,7 +647,7 @@ var tabLength = $(".tab-pane").length,
     prevBtn = $(".tab-content > nav > .pager > .previous"),
     nextBtn = $(".tab-content > nav > .pager > .next");
 
-$("ul#sell-tabs").on("click", "li", function (e) {
+$("ul#buy-tabs").on("click", "li", function (e) {
   var target = $(this),
     allSimilar = target.parent().children(":not(.progress)"),
     index = allSimilar.index(target);
@@ -1220,7 +686,7 @@ prevBtn.click(":not(.disabled)", function (e) {
   if ( !panes.index( previousPane ) )
     prevBtn.addClass("disabled");
 
-  $("#sell-tabs a[href='#" + previousId + "']").tab("show");
+  $("#buy-tabs a[href='#" + previousId + "']").tab("show");
 });
 
 nextBtn.click(":not(.disabled)", function (e) {
@@ -1238,7 +704,7 @@ nextBtn.click(":not(.disabled)", function (e) {
   if ( panes.index( nextPane ) === panes.length-2 ) // 2 because we want to leave out finish pane
     nextBtn.addClass("disabled");
 
-  $("#sell-tabs a[href='#" + nextId + "']").tab("show");
+  $("#buy-tabs a[href='#" + nextId + "']").tab("show");
 });
 
 </script>
