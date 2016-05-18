@@ -37,6 +37,7 @@
 <script src="../dist/js/bootstrap.js"></script>
 <script src="../assets/js/bootstrap-slider.js"></script>
 <script src="../assets/js/sortable.js"></script>
+<script src="../assets/js/pdfobject.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -66,7 +67,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="/sample/home">
       <img alt="HornOK" src="/assets/brand/logo@2x.png">
     </a>
 
@@ -124,7 +125,7 @@
         <a href="#finish" aria-controls="user-details" role="tab" data-toggle="tab"> <span class="badge"> 3 </span> Finish </a>
 
       <li class="progress pull-right col-md-2 hidden-xs hidden-sm">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66.6%;"> 66%
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%;"> 33%
         </div>
       </li>
     </ul>
@@ -132,14 +133,25 @@
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active"  id="selected-vehicle">
         <div class="model-info">
-  <img class="col-xs-offset-1 col-xs-10 col-sm-4 img-rounded" src="/assets/img/placeholder-truck.png"></img>
+  <a href="sell-listing.html">
+    <img class="col-xs-offset-1 col-xs-10 col-sm-4 img-rounded" src="/assets/img/placeholder-truck.png"></img>
+  </a>
+
   <div class="col-sm-7">
-    <div class="page-header">
-      <h2 class="text-uppercase">
-        Tata 2518 Tiger <br>
-        <small class="text-capitalize"> 2012 Model in good condition </small>
+    <div class="page-header text-capitalize">
+
+        <h2 class="text-uppercase">
+          <a href="sell-listing.html">
+            Tata 2518 Tiger
+          </a>
+          <br> <small class="text-capitalize"> 2012 Model in good condition </small>
+        </h2>
+
+      <h2 class="pull-right">
+        ₹ 6 - 8 Lakhs <br>
+        <small title="Tipper truck" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" class="icon-tipper-truck hidden-xs pull-right"></small>
       </h2>
-      <span class="icon-tipper-truck hidden-xs pull-right"></span>
+
     </div>
 
     <div>
@@ -147,6 +159,7 @@
 
         <div class="form-group">
           <label class="control-label col-sm-3"> Location </label>
+
           <div class="col-sm-9">
             <p class="form-control-static  text-info">
               <span class="glyphicon glyphicon-map-marker"></span>
@@ -157,6 +170,7 @@
 
         <div class="form-group">
           <label class="control-label col-sm-3"> State of Registration </label>
+
           <div class="col-sm-9">
             <p class="form-control-static  text-info">
               <span class="glyphicon glyphicon-flag"></span>
@@ -167,11 +181,12 @@
 
         <div class="form-group">
           <label class="control-label col-sm-3"> Evaluation </label>
+
           <div class="col-sm-9">
             <p class="form-control-static">
               <span class="glyphicon glyphicon-list-alt"></span>
-              <a href="https://pdfobject.com/pdf/sample-3pp.pdf"> Evaluation document </a>,
-              <a href="https://pdfobject.com/pdf/sample-3pp.pdf"> Verification document </a>
+              <a href="/assets/misc/model_brochure.pdf"> Evaluation document </a>,
+              <a href="/assets/misc/model_brochure.pdf"> Verification document </a>
             </p>
           </div>
         </div>
@@ -183,7 +198,6 @@
 
   <div class="clearfix"></div>
 </div>
-
 
       </div>
 
@@ -358,6 +372,10 @@
 
 <script>
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
 $("#user-details form").on("submit", function (e) {
   $("#request-tabs a").last().tab('show');
   updateProgress(100);
@@ -460,6 +478,7 @@ nextBtn.click(":not(.disabled)", function (e) {
 <!-- Feedback buttons; remove in production -->
 <footer class="main-footer bg-primary-contrast text-capitalize"
   style="
+    z-index: 2000;
     position: fixed;
     width: 100%;
     bottom: 0

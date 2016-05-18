@@ -37,6 +37,7 @@
 <script src="../dist/js/bootstrap.js"></script>
 <script src="../assets/js/bootstrap-slider.js"></script>
 <script src="../assets/js/sortable.js"></script>
+<script src="../assets/js/pdfobject.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -66,7 +67,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="/sample/home">
       <img alt="HornOK" src="/assets/brand/logo@2x.png">
     </a>
 
@@ -256,23 +257,13 @@
       <div class="row">
 
         <div id="carousel-example-first" class="carousel multi-item-carousel white-controls slide" data-interval=false data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-first" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-first" data-slide-to="1"></li>
-    <li data-target="#carousel-example-first" data-slide-to="2"></li>
-    <li data-target="#carousel-example-first" data-slide-to="3"></li>
-    <li data-target="#carousel-example-first" data-slide-to="4"></li>
-    <li data-target="#carousel-example-first" data-slide-to="5"></li>
-    <li data-target="#carousel-example-first" data-slide-to="6"></li>
-  </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -294,7 +285,7 @@
     <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -316,7 +307,7 @@
     <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -338,7 +329,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -360,7 +351,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -382,7 +373,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -404,7 +395,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -436,6 +427,8 @@
   </a>
 </div>
 <script>
+// Multiple instances of this code not allowed
+//
 // $('.multi-item-carousel .item').each(function(){
 //   var next = $(this).next();
 //   if (!next.length) {
@@ -478,23 +471,12 @@
       <h1> Buyers near you are looking for </h1>
 
       <div id="carousel-example-second" class="carousel multi-item-carousel white-controls slide" data-interval=false data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-second" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-second" data-slide-to="1"></li>
-    <li data-target="#carousel-example-second" data-slide-to="2"></li>
-    <li data-target="#carousel-example-second" data-slide-to="3"></li>
-    <li data-target="#carousel-example-second" data-slide-to="4"></li>
-    <li data-target="#carousel-example-second" data-slide-to="5"></li>
-    <li data-target="#carousel-example-second" data-slide-to="6"></li>
-  </ol>
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -516,7 +498,7 @@
     <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -538,7 +520,7 @@
     <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -560,7 +542,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -582,7 +564,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -604,7 +586,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -626,7 +608,7 @@
      <div class="item">
 
         <div class="col-sm-6 col-md-4 text-left">
-  <a href="#" class="thumbnail">
+  <a href="sell-listing.html" class="thumbnail">
     <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
     <div class="caption bg-black text-capitalize">
       <h4>
@@ -728,6 +710,7 @@ $('.multi-item-carousel .item').each(function(){
 <!-- Feedback buttons; remove in production -->
 <footer class="main-footer bg-primary-contrast text-capitalize"
   style="
+    z-index: 2000;
     position: fixed;
     width: 100%;
     bottom: 0

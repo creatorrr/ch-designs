@@ -37,6 +37,7 @@
 <script src="../dist/js/bootstrap.js"></script>
 <script src="../assets/js/bootstrap-slider.js"></script>
 <script src="../assets/js/sortable.js"></script>
+<script src="../assets/js/pdfobject.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -66,7 +67,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="/sample/home">
       <img alt="HornOK" src="/assets/brand/logo@2x.png">
     </a>
 
@@ -1262,6 +1263,7 @@ nextBtn.click(":not(.disabled)", function (e) {
 <!-- Feedback buttons; remove in production -->
 <footer class="main-footer bg-primary-contrast text-capitalize"
   style="
+    z-index: 2000;
     position: fixed;
     width: 100%;
     bottom: 0

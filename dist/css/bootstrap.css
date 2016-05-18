@@ -1976,6 +1976,19 @@ a.bg-gray:focus {
 .padded-xlarge {
   padding: 24px 48px !important;
 }
+.page-header > .pull-right {
+  margin-top: 20px;
+}
+.page-header h1 [class^="icon-"],
+.page-header h2 [class^="icon-"],
+.page-header h3 [class^="icon-"],
+.page-header h1 + [class^="icon-"],
+.page-header h2 + [class^="icon-"],
+.page-header h3 + [class^="icon-"] {
+  margin-top: 0;
+  font-size: 2.5em;
+  line-height: 0.75;
+}
 code,
 kbd,
 pre,
@@ -2750,6 +2763,74 @@ pre code {
     border-left: 1px dotted #a79c9c;
     padding: 36px 72px;
   }
+}
+.sell-listing .details > .detail {
+  border-bottom: 1px dotted #877878;
+  padding: 0.5em 2em;
+  margin-bottom: 1em;
+  background-color: white;
+}
+.sell-listing .details > .detail:last-child {
+  border-bottom: none;
+}
+@media (min-width: 992px) {
+  .sell-listing .details > .detail {
+    min-height: 36em;
+  }
+  .sell-listing .details > .detail:nth-last-child(2) {
+    border-bottom: none;
+  }
+  .sell-listing .details > .detail:nth-child(odd) {
+    border-right: 1px dotted #877878;
+    text-align: left;
+  }
+  .sell-listing .details > .detail:nth-child(even) {
+    border-right: none;
+    text-align: right;
+  }
+}
+.expander {
+  z-index: 1000;
+  -webkit-transition: top 0.2s 0.1s;
+  -o-transition: top 0.2s 0.1s;
+  transition: top 0.2s 0.1s;
+}
+@media (min-width: 992px) {
+  .expander {
+    position: relative;
+    top: -25em;
+  }
+  .expander[data-expanded=true] {
+    top: -15em;
+  }
+}
+.expander > button {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  position: relative;
+  bottom: -4em;
+  z-index: 1500;
+}
+.expander > button span {
+  font-size: 1.5em;
+}
+.expander > button:focus,
+.expander > button:active,
+.expander > button:hover {
+  outline: none;
+}
+.expander > button .glyphicon-resize-small {
+  display: block;
+}
+.expander > button .glyphicon-resize-full {
+  display: none;
+}
+.expander[data-expanded=true] > button .glyphicon-resize-small {
+  display: none;
+}
+.expander[data-expanded=true] > button .glyphicon-resize-full {
+  display: block;
 }
 table {
   background-color: transparent;
@@ -3575,6 +3656,12 @@ select[multiple].input-lg {
 .profile .editable > form,
 .settings .editable > form {
   display: block;
+}
+.details .detail > .form-group label + h1,
+.details .detail > .form-group label + h2,
+.details .detail > .form-group label + h3,
+.details .detail > .form-group label + h4 {
+  margin: 0 auto 1.5em auto;
 }
 .btn {
   display: inline-block;
@@ -5772,6 +5859,16 @@ a.label:focus {
 .label-danger[href]:focus {
   background-color: #cb5326;
 }
+@media (min-width: 768px) {
+  .sell-listing #price-and-body .body-type [class^="icon-"] {
+    margin-top: -8px;
+    margin-right: -8px;
+  }
+}
+.sell-listing #price-and-body .body-type [class^="icon-"] {
+  font-size: 6em;
+  display: block;
+}
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -6510,22 +6607,12 @@ ul.models li img {
 #selected-vehicle {
   margin: 36px auto;
 }
-@media (max-width: 768px) {
-  #selected-vehicle .model-info > img + div {
-    clear: both;
-    padding-top: 1em;
-  }
-}
 #selected-vehicle .model-info .page-header {
-  margin-top: 0;
+  margin-top: 10px;
 }
-#selected-vehicle .model-info .page-header [class^="icon-"] {
-  margin-top: 0;
-  font-size: 6em;
-}
-#selected-vehicle .model-info .page-header > h1,
-#selected-vehicle .model-info .page-header > h2,
-#selected-vehicle .model-info .page-header > h3 {
+#selected-vehicle .model-info .page-header > h1:first-child,
+#selected-vehicle .model-info .page-header > h2:first-child,
+#selected-vehicle .model-info .page-header > h3:first-child {
   font-weight: bold;
 }
 #selected-vehicle .model-info:hover > img,
@@ -6537,7 +6624,7 @@ ul.models li img {
   -ms-filter: saturate(125%) contrast(150%);
   filter: saturate(125%) contrast(150%);
 }
-#selected-vehicle .model-info > img {
+#selected-vehicle .model-info > a > img {
   -webkit-filter: grayscale(50%) contrast(200%);
   -moz-filter: grayscale(50%) contrast(200%);
   -ms-filter: grayscale(50%) contrast(200%);
@@ -6551,6 +6638,12 @@ ul.models li img {
   border: 8px solid #a79c9c;
   border-radius: 16px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  #selected-vehicle .model-info > a > img + div {
+    clear: both;
+    padding-top: 1em;
+  }
 }
 .panel {
   margin-bottom: 20px;
@@ -7086,10 +7179,7 @@ button.close {
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
+  transform: none;
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -7182,6 +7272,11 @@ button.close {
   .modal-lg {
     width: 900px;
   }
+}
+#brochure.modal > .modal-dialog,
+#evaluation.modal > .modal-dialog {
+  height: 100%;
+  width: 50%;
 }
 .tooltip {
   position: absolute;

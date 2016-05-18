@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<title>
+  
+    HornOK
+  
+</title>
+
+<!-- Include Open Sans font -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+<!-- Bootstrap core CSS -->
+
+<link href="../dist/css/bootstrap.css" rel="stylesheet">
+
+
+
+<!-- Documentation extras -->
+
+<link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="../assets/css/src/docs.css" rel="stylesheet">
+<link href="../assets/css/sortable.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../assets/js/ie-emulation-modes-warning.js"></script>
+<script src="../assets/js/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery.debounce.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../assets/js/bootstrap-slider.js"></script>
+<script src="../assets/js/sortable.js"></script>
+<script src="../assets/js/pdfobject.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+
+  </head>
+  <body>
+
+    <!-- Page content of course! -->
+    <div class="wrapper sell-listing bg-gray">
+
+  <nav class="navbar navbar-default navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="/sample/home">
+      <img alt="HornOK" src="/assets/brand/logo@2x.png">
+    </a>
+
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="navbar" class="collapse navbar-collapse">
+
+    <ul class="nav navbar-nav">
+      <li class="location-picker dropdown">
+        <a href="#" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Mithila <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="disabled"><a class="text-uppercase" href="#">Mithila</a></li>
+          <li><a class="text-uppercase" href="#">Delhi</a></li>
+          <li><a class="text-uppercase" href="#">Chandigarh</a></li>
+          <li><a class="text-uppercase" href="#">Chennai</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li> <a href="login.html"> Log In </a> </li>
+
+      <form class="navbar-form navbar-right">
+        <button type="submit" class="btn btn-primary" formaction="post-sell-listing.html">Sell Vehicles</button>
+      </form>
+    </ul>
+
+  </div>
+</div>
+
+
+</nav>
+
+
+
+  <div class="modal fade" id="brochure" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Official vehicle brochure </h4>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="evaluation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Vehicle evaluation report </h4>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="align-with-nav container padded-xlarge bg-white">
+
+    <!-- Header -->
+    <div class="page-header text-capitalize">
+      <h1>
+        Tata 2518 Tiger (2012) <br>
+        <small> New Delhi </small>
+      </h1>
+
+      <div class="text-right pull-right">
+        <a href="post-request-details.html" class="btn btn-lg btn-info">
+          <span class="glyphicon glyphicon-info-sign"></span>
+          Request details
+        </a>
+
+        <br>
+
+        <sub class="text-warning text-capitalize">
+          * No inquiry charges apply &nbsp;
+        </sub>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <!-- Image gallery -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="/assets/img/truck-bg-brushed.png" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-compressed.jpg" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-brushed.png" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-compressed.jpg" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-brushed.png" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-compressed.jpg" alt="...">
+        </div>
+
+        <div class="item">
+          <img src="/assets/img/truck-bg-brushed.png" alt="...">
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Info section -->
+    <div class="expander" data-expanded="false">
+      <!-- Expand button -->
+      <button class="center-block btn btn-info hidden-sm hidden-xs">
+        <span class="glyphicon glyphicon-resize-full"></span>
+        <span class="glyphicon glyphicon-resize-small"></span>
+      </button>
+
+      <!-- Content -->
+      <section class="details">
+
+        <div id="condition" class="detail text-capitalize col-md-6">
+
+          <h2 class="text-uppercase"> Vehicle condition </h2>
+          <hr class="divider">
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Engine </label>
+
+            <h2 class="form-control-static">
+              <span class="text-success glyphicon glyphicon-ok"></span>
+              8 / 10
+              <br> <small> Well maintained </small>
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Chassis </label>
+
+            <h2 class="form-control-static">
+              <span class="text-warning glyphicon glyphicon-minus"></span>
+              6 / 10
+              <br> <small> Above average performance </small>
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Tires </label>
+
+            <h2 class="form-control-static">
+              <span class="text-danger glyphicon glyphicon-remove"></span>
+              3 / 10
+              <br> <small> Will need replacement </small>
+            </h2>
+          </div>
+
+        </div>
+
+        <div id="price-and-body" class="detail text-capitalize col-md-6">
+
+          <h2 class="text-uppercase"> Body type & price </h2>
+          <hr class="divider">
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Price range </label>
+
+            <h2 class="form-control-static">
+              ₹ 6 - 8 Lakhs
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Body type </label>
+
+            <h4 class="body-type form-control-static">
+              <span class="label label-default"> Car carrier trailer </span>
+              <span class="icon-car-carrier-trailer"></span>
+            </h4>
+          </div>
+
+        </div>
+
+        <div id="other-info" class="detail text-capitalize col-md-6">
+
+          <h2 class="text-uppercase"> Other information </h2>
+          <hr class="divider">
+
+          <div class="form-group">
+            <label class="control-label text-gray"> State of Registration </label>
+
+            <h2 class="form-control-static">
+              <span class="glyphicon glyphicon-flag"></span>
+              Uttar pradesh
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Pending loan </label>
+
+            <h2 class="form-control-static">
+              <span class="text-success glyphicon glyphicon-ok"></span>
+              None
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Vehicle specification </label>
+
+            <a href="/assets/misc/model_brochure.pdf" data-toggle="modal" data-target="#brochure.modal">
+              <h2 class="form-control-static">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                Official brochure
+              </h2>
+            </a>
+          </div>
+
+        </div>
+
+        <div id="evaluation-docs" class="detail text-capitalize col-md-6">
+
+          <h2 class="text-uppercase"> Assessment report </h2>
+          <hr class="divider">
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Loan check </label>
+
+            <h2 class="form-control-static">
+              Not verified
+              <span class="text-warning glyphicon glyphicon-minus-sign"></span>
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Stolen vehicle check </label>
+
+            <h2 class="form-control-static">
+              Not in stolen databases
+              <span class="text-success glyphicon glyphicon-ok"></span>
+            </h2>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label text-gray"> Physical inspection </label>
+
+            <a href="/assets/misc/model_brochure.pdf" data-toggle="modal" data-target="#evaluation.modal">
+              <h2 class="form-control-static">
+                Evaluation report
+                <span class="glyphicon glyphicon-wrench"></span>
+              </h2>
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Pusher for sticky footer -->
+  <div class="main-footer"></div>
+</div>
+
+<script>
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  PDFObject.embed("/assets/misc/model_brochure.pdf", "#evaluation.modal .modal-dialog", { width: '100%', height: '100%' });
+  PDFObject.embed("/assets/misc/model_brochure.pdf", "#brochure.modal .modal-dialog", { width: '100%', height: '100%' });
+});
+
+$(".expander > button").on("click", function () {
+  var parent = $(this).parent(),
+    expanded = parent.data("expanded");
+
+  parent.attr("data-expanded", ""+!expanded);
+  parent.data("expanded", !expanded);
+});
+
+</script>
+
+<footer class="main-footer bg-black text-capitalize"
+  style="margin-bottom: 50px"
+>
+  <div class="container">
+    <div>
+      <h4> <a href="about_page.html"> About </a> </h4>
+      <h4> <a href="tos.html"> Terms of Service </a> </h4>
+      <h4> <a href="privacy.html"> Privacy Policy </a> </h4>
+    </div>
+
+    <div class="pull-right">
+      <h4> Questions? <strong> <a href="#"> Contact us </a> </strong> </h4>
+    </div>
+  </div>
+</footer>
+
+<!-- Feedback buttons; remove in production -->
+<footer class="main-footer bg-primary-contrast text-capitalize"
+  style="
+    z-index: 2000;
+    position: fixed;
+    width: 100%;
+    bottom: 0
+  "
+>
+  <div class="container">
+    <div>
+      <h4> <a class="btn btn-info btn-sm" href="https://docs.google.com/forms/d/1yv6be7jwVKMX1xgxiJ18Nuck_nEvrEYKP4_aYvvtDVA/viewform?c=0&w=1"> Leave feedback </a> </h4>
+      <h4> <a class="btn btn-danger btn-sm" href="https://docs.google.com/forms/d/1xScz2mH78gWzwtpssWKHSgzPMUiHFFJE5IckSn39HO4/viewform"> Report bug </a> </h4>
+    </div>
+
+    <div class="pull-right">
+      <h4> <a class="btn btn-default btn-sm text-black" href="/"> Design home </a> </h4>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+  </body>
+</html>
