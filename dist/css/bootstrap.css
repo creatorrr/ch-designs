@@ -6507,6 +6507,51 @@ ul.models li img {
   -ms-filter: grayscale(100%) contrast(200%);
   filter: grayscale(100%) contrast(200%);
 }
+#selected-vehicle {
+  margin: 36px auto;
+}
+@media (max-width: 768px) {
+  #selected-vehicle .model-info > img + div {
+    clear: both;
+    padding-top: 1em;
+  }
+}
+#selected-vehicle .model-info .page-header {
+  margin-top: 0;
+}
+#selected-vehicle .model-info .page-header [class^="icon-"] {
+  margin-top: 0;
+  font-size: 6em;
+}
+#selected-vehicle .model-info .page-header > h1,
+#selected-vehicle .model-info .page-header > h2,
+#selected-vehicle .model-info .page-header > h3 {
+  font-weight: bold;
+}
+#selected-vehicle .model-info:hover > img,
+#selected-vehicle .model-info:focus > img,
+#selected-vehicle .model-info:active > img,
+#selected-vehicle .model-info.active > img {
+  -webkit-filter: saturate(125%) contrast(150%);
+  -moz-filter: saturate(125%) contrast(150%);
+  -ms-filter: saturate(125%) contrast(150%);
+  filter: saturate(125%) contrast(150%);
+}
+#selected-vehicle .model-info > img {
+  -webkit-filter: grayscale(50%) contrast(200%);
+  -moz-filter: grayscale(50%) contrast(200%);
+  -ms-filter: grayscale(50%) contrast(200%);
+  filter: grayscale(50%) contrast(200%);
+  padding: 12px;
+  margin-left: 4%;
+  margin-right: 4%;
+  overflow: hidden;
+  opacity: 0.8;
+  background-color: #2d2828;
+  border: 8px solid #a79c9c;
+  border-radius: 16px;
+  cursor: pointer;
+}
 .panel {
   margin-bottom: 20px;
   background-color: #fffaf9;
