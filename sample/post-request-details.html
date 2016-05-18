@@ -52,7 +52,7 @@
   <body>
 
     <!-- Page content of course! -->
-    <div class="wrapper post-buy-listing bg-gray">
+    <div class="wrapper post-request-listing bg-gray">
 
   <nav class="navbar navbar-default navbar-inverse navbar-static-top">
   <div class="container-fluid">
@@ -108,330 +108,37 @@
   <div class="align-with-nav container padded-xlarge bg-white">
     <div class="page-header">
       <h1>
-        Find vehicles <br>
-        <small> Tell us your vehicle requirements </small>
+        Buy vehicle <br>
+        <small> Share your details so we can contact you </small>
       </h1>
     </div>
 
-    <ul id="buy-tabs" class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active">
-        <a href="#vehicle-type" aria-controls="vehicle-type" role="tab" data-toggle="tab"> <span class="badge"> 1 </span> Vehicle type </a>
-
+    <ul id="request-tabs" class="nav nav-tabs" role="tablist">
       <li role="presentation" >
-        <a href="#manufacturers" aria-controls="manufacturers" role="tab" data-toggle="tab"> <span class="badge"> 2 </span> Manufacturers </a>
+        <a href="#selected-vehicle" aria-controls="selected-vehicle" role="tab" data-toggle="tab"> <span class="badge"> 1 </span> Selected vehicle </a>
 
-      <li role="presentation" >
-        <a href="#price-range" aria-controls="price-range" role="tab" data-toggle="tab"> <span class="badge"> 3 </span> Price range </a>
-
-      <li role="presentation" >
-        <a href="#user-details" aria-controls="user-details" role="tab" data-toggle="tab"> <span class="badge"> 4 </span> User details </a>
+      <li role="presentation" class="active" >
+        <a href="#user-details" aria-controls="user-details" role="tab" data-toggle="tab"> <span class="badge"> 2 </span> User details </a>
 
       <li role="presentation" class="disabled">
-        <a href="#finish" aria-controls="user-details" role="tab" data-toggle="tab"> <span class="badge"> 5 </span> Finish </a>
+        <a href="#finish" aria-controls="user-details" role="tab" data-toggle="tab"> <span class="badge"> 3 </span> Finish </a>
 
       <li class="progress pull-right col-md-2 hidden-xs hidden-sm">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"> 20%
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66.6%;"> 66%
         </div>
       </li>
     </ul>
 
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="vehicle-type">
-        <ul class="vehicle-type list-inline">
-  
-  <div id="truck-selector">
-    <li  class="active" >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="truck"  checked="checked" >
-        <span class="icon-high-side-deck-truck"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Truck </strong> </small>
-  </div>
-  
-  <div id="trailer-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="trailer" >
-        <span class="icon-car-carrier-trailer"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Trailer </strong> </small>
-  </div>
-  
-  <div id="dumper-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="dumper" >
-        <span class="icon-tipper-truck"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Dumper </strong> </small>
-  </div>
-  
-  <div id="transit_mixer-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="transit_mixer" >
-        <span class="icon-transit-mixer-truck"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Transit Mixer </strong> </small>
-  </div>
-  
-  <div id="bulker-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="bulker" >
-        <span class="icon-bulker-truck"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Bulker </strong> </small>
-  </div>
-  
-  <div id="tanker-selector">
-    <li >
-      <label class="radio-inline">
-        <input type="radio" name="vehicleTypeId" class="hidden" value="tanker" >
-        <span class="icon-tanker-truck"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Tanker </strong> </small>
-  </div>
-  
-</ul>
-
-
-      </div>
-
-      <div role="tabpanel" class="tab-pane" id="manufacturers">
-        <ul class="manufacturers list-inline">
-  
-  <div id="eicher-selector">
-    <li  class="active" >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="eicher"  checked="checked" >
-        <span class="manufacturer-eicher"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Eicher </strong> </small>
-  </div>
-  
-  <div id="bharat_benz-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="bharat_benz" >
-        <span class="manufacturer-bharat_benz"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Bharat Benz </strong> </small>
-  </div>
-  
-  <div id="ashok_leyland-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="ashok_leyland" >
-        <span class="manufacturer-ashok_leyland"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Ashok Leyland </strong> </small>
-  </div>
-  
-  <div id="amw-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="amw" >
-        <span class="manufacturer-amw"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> AMW </strong> </small>
-  </div>
-  
-  <div id="hino-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="hino" >
-        <span class="manufacturer-hino"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Hino </strong> </small>
-  </div>
-  
-  <div id="kamaz-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="kamaz" >
-        <span class="manufacturer-kamaz"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Kamaz </strong> </small>
-  </div>
-  
-  <div id="sml_isuzu-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="sml_isuzu" >
-        <span class="manufacturer-sml_isuzu"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> SML Isuzu </strong> </small>
-  </div>
-  
-  <div id="daf-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="daf" >
-        <span class="manufacturer-daf"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> DAF </strong> </small>
-  </div>
-  
-  <div id="man-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="man" >
-        <span class="manufacturer-man"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> MAN </strong> </small>
-  </div>
-  
-  <div id="mahindra-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="mahindra" >
-        <span class="manufacturer-mahindra"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Mahindra </strong> </small>
-  </div>
-  
-  <div id="volvo-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="volvo" >
-        <span class="manufacturer-volvo"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Volvo </strong> </small>
-  </div>
-  
-  <div id="tata-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="tata" >
-        <span class="manufacturer-tata"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Tata </strong> </small>
-  </div>
-  
-  <div id="hindustan_motors-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="hindustan_motors" >
-        <span class="manufacturer-hindustan_motors"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Hindustan Motors </strong> </small>
-  </div>
-  
-  <div id="force-selector">
-    <li >
-      <label class="checkbox-inline">
-        <input type="checkbox" name="manufacturerId" class="hidden" value="force" >
-        <span class="manufacturer-force"></span>
-      </label>
-    </li>
-
-    <small class="text-uppercase text-center"> <strong> Force </strong> </small>
-  </div>
-  
-</ul>
-
-
-      </div>
-
-      <div role="tabpanel" class="tab-pane" id="price-range">
-        <form class="sell-details form-horizontal">
-  <div class="section">
-    <h4 class="text-uppercase col-sm-offset-2"> Body type </h4>
-    <hr class="col-sm-8 col-sm-offset-2 hidden-xs">
-
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-8">
-        <div class="control tooltip-inverted">
-  <strong class="text-capitalize"> Price range <sub> (In Lakhs) </sub>: </strong>
-
-  <span class="pull-right">
-    <input
-      class="pull-right"
-      type="number"
-      name="price_range"
-      data-provide="slider"
-      data-slider-min="3.0"
-      data-slider-max="20.0"
-      data-slider-step="0.5"
-      data-slider-value="[6.0, 12.0]"
-      data-slider-tooltip="always"
-      data-slider-tooltip-split="true"
-      data-slider-tooltip-position="bottom"
-    >
-  </span>
+      <div role="tabpanel" class="tab-pane" id="selected-vehicle">
+        <div class="model">
+  <img class="col-sm-offset-1 col-sm-3 img-rounded img-thumbnail pull-left" src="/assets/img/placeholder-truck.png">
 </div>
-<div class="clearfix"></div>
 
 
       </div>
-    </div>
 
-    <br>
-    <h4 class="text-uppercase col-sm-offset-2"> Notifications for matching vehicles </h4>
-    <hr class="col-sm-8 col-sm-offset-2 hidden-xs">
-
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-8">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            My budget is flexible. Please notify me of other good deals <strong> close to </strong> but outside this range.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Please notify me of vehicles <strong> only </strong> within this range.
-          </label>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</form>
-
-      </div>
-
-      <div role="tabpanel" class="tab-pane" id="user-details">
+      <div role="tabpanel" class="tab-pane active" id="user-details">
         <form class="sell-details form-horizontal" novalidate>
 
   <div class="section">
@@ -603,7 +310,7 @@
 <script>
 
 $("#user-details form").on("submit", function (e) {
-  $("#buy-tabs a").last().tab('show');
+  $("#request-tabs a").last().tab('show');
   updateProgress(100);
 
   return false;
@@ -614,40 +321,16 @@ function updateProgress(pc) {
   $(".progress-bar").css("width", pc+'%');
 }
 
-$('#buy-tabs a').click(function (e) {
+$('#request-tabs a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
-});
-
-$(".post-buy-listing #manufacturers").on("click", "li", function (e) {
-  var target = $(this),
-    input = target.find('input[type=checkbox]'),
-    checked = input.attr("checked"),
-    manufacturer = input.val();
-
-  $(".post-buy-listing #manufacturers ul > div#" + manufacturer + "-selector > li").toggleClass("active");
-
-  input.attr("checked", !checked);
-  return false;
-});
-
-$(".post-buy-listing #vehicle-type").on("click", "li", function (e) {
-  var target = $(this),
-    input = target.find('input[type=radio]'),
-    checked = input.attr("checked"),
-    vType = input.val();
-
-  $(".post-buy-listing #vehicle-type ul li").removeClass("active");
-  $(".post-buy-listing #vehicle-type ul > div#" + vType + "-selector > li").addClass("active");
-
-  input.attr("checked", !checked);
 });
 
 var tabLength = $(".tab-pane").length,
     prevBtn = $(".tab-content > nav > .pager > .previous"),
     nextBtn = $(".tab-content > nav > .pager > .next");
 
-$("ul#buy-tabs").on("click", "li", function (e) {
+$("ul#request-tabs").on("click", "li", function (e) {
   var target = $(this),
     allSimilar = target.parent().children(":not(.progress)"),
     index = allSimilar.index(target);
@@ -686,7 +369,7 @@ prevBtn.click(":not(.disabled)", function (e) {
   if ( !panes.index( previousPane ) )
     prevBtn.addClass("disabled");
 
-  $("#buy-tabs a[href='#" + previousId + "']").tab("show");
+  $("#request-tabs a[href='#" + previousId + "']").tab("show");
 });
 
 nextBtn.click(":not(.disabled)", function (e) {
@@ -704,7 +387,7 @@ nextBtn.click(":not(.disabled)", function (e) {
   if ( panes.index( nextPane ) === panes.length-2 ) // 2 because we want to leave out finish pane
     nextBtn.addClass("disabled");
 
-  $("#buy-tabs a[href='#" + nextId + "']").tab("show");
+  $("#request-tabs a[href='#" + nextId + "']").tab("show");
 });
 
 </script>

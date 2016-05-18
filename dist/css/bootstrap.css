@@ -5968,6 +5968,20 @@ a.thumbnail.active {
 a.thumbnail:hover {
   text-decoration: none;
 }
+.founders {
+  padding-left: 8%;
+}
+.founders > div {
+  margin-left: 4%;
+}
+.founders .thumbnail > img {
+  padding: 6px;
+}
+.founders .thumbnail > .caption {
+  margin-top: 12px;
+  padding-top: 0;
+  border-top: 1px dotted #635858;
+}
 .alert {
   padding: 15px;
   margin-bottom: 20px;

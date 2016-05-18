@@ -1144,7 +1144,7 @@ $("#user-details form").on("submit", function (e) {
 });
 
 function updateProgress(pc) {
-  $(".progress-bar").text(pc+'%');
+  $(".progress-bar").text(Math.floor(pc)+'%');
   $(".progress-bar").css("width", pc+'%');
 }
 
