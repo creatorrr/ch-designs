@@ -5613,6 +5613,20 @@ nav .user-options > .dropdown-menu > li a:hover {
   color: #1d1818;
   background-color: #fffaf9;
 }
+.sell-listing .align-with-nav .page-header .pull-right [class*="-info"] {
+  display: inline-block;
+}
+.sell-listing .align-with-nav .page-header .pull-right [class*="-danger"],
+.sell-listing .align-with-nav .page-header .pull-right [class*="-warning"] {
+  display: none;
+}
+.sell-listing nav.logged-in + .align-with-nav .page-header .pull-right [class*="-info"] {
+  display: none;
+}
+.sell-listing nav.logged-in + .align-with-nav .page-header .pull-right [class*="-danger"],
+.sell-listing nav.logged-in + .align-with-nav .page-header .pull-right [class*="-warning"] {
+  display: inline-block;
+}
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -7797,6 +7811,40 @@ button.close {
 }
 .carousel.white-controls .carousel-control.right > .glyphicon,
 .carousel.white-controls .carousel-control.right > .icon {
+  margin-right: -1em;
+}
+.carousel.black-controls .carousel-control {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+.carousel.black-controls .carousel-control:hover,
+.carousel.black-controls .carousel-control:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.carousel.black-controls .carousel-control .glyphicon,
+.carousel.black-controls .carousel-control .icon {
+  color: #fffaf9;
+  background-color: #1d1818;
+  padding: 0.5em;
+  height: initial;
+  width: initial;
+  margin-top: -1em;
+  border: 2px solid #fffaf9;
+  border-radius: 50%;
+}
+.carousel.black-controls .carousel-control.left {
+  background: transparent;
+}
+.carousel.black-controls .carousel-control.left > .glyphicon,
+.carousel.black-controls .carousel-control.left > .icon {
+  margin-left: -1em;
+}
+.carousel.black-controls .carousel-control.right {
+  background: transparent;
+}
+.carousel.black-controls .carousel-control.right > .glyphicon,
+.carousel.black-controls .carousel-control.right > .icon {
   margin-right: -1em;
 }
 .multi-item-carousel .carousel-inner > .item {
