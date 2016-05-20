@@ -6093,6 +6093,10 @@ a.thumbnail:hover {
   padding-top: 0;
   border-top: 1px dotted #635858;
 }
+.buy.thumbnail .caption {
+  position: relative;
+  top: -4em;
+}
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -6258,6 +6262,34 @@ a.thumbnail:hover {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress.chart {
+  height: 120px;
+  text-align: center;
+}
+.progress.chart .progress-bar {
+  overflow: hidden;
+}
+.progress.chart sup {
+  position: relative;
+  top: -7em;
+  right: -4em;
+  font-weight: bold;
+  font-size: 14px;
+}
+.progress.chart sup:before {
+  content: '*';
+}
+.progress.chart [class^="progress-"] small,
+.progress.chart [class^="progress-"] span {
+  font-size: 3em;
+}
+.progress.chart [class^="progress-"]:before {
+  content: '';
+}
+.progress.chart [class^="progress-"] [class^="manufacturer-"] {
+  display: block;
+  font-size: 10em;
 }
 .media {
   margin-top: 15px;
@@ -7880,6 +7912,14 @@ button.close {
 .multi-item-carousel .carouse-control.left,
 .multi-item-carousel .carouse-control.right {
   background-image: none;
+}
+.buy.carousel .thumnail .caption > span {
+  margin-right: 0;
+  padding-right: 0;
+  vertical-align: bottom;
+}
+.buy.carousel .thumnail .caption > span [class^="icon-"] {
+  font-size: 2em;
 }
 .clearfix:before,
 .clearfix:after,
