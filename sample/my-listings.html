@@ -54,7 +54,38 @@
   <body>
 
     <!-- Page content of course! -->
-    <div class="wrapper bg-gray">
+    <!-- Modal -->
+<div class="modal fade" id="imageUploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Upload image </h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-3 control-label"> Image </label>
+            <div class="col-sm-9">
+              <input type="file" id="exampleInputFile">
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <form>
+          <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" formaction=""> Submit </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper profile bg-gray">
 
   <nav class="logged-in navbar navbar-default navbar-inverse navbar-static-top">
   <div class="container-fluid">
@@ -136,20 +167,466 @@
 
 
 
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h1> Your listings </h1>
-        <hr class="divider">
+  <div class="align-with-nav container padded-xlarge bg-white">
+    <header class="page-header">
+      <h1>
+        My listings <br>
+        <small> All your listings and transactions </small>
+      </h1>
+    </header>
 
-        <h2 class="text-uppercase"> Under construction </h2>
-      </div>
+    <section>
+
+      <ul id="settings-tabs" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#sell" aria-controls="sell" role="tab" data-toggle="tab"> Your Listings </a>
+
+        <li role="presentation" >
+          <a href="#buy" aria-controls="buy" role="tab" data-toggle="tab"> Your Interests </a>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="sell">
+
+          <br>
+          <div class="col-xs-12">
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
     </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+
+            <div class="clearfix"></div>
+            <nav aria-label="Page navigation">
+  <ul class="pagination pagination-sm">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+          </div>
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="buy">
+
+          <br>
+          <div class="col-xs-12">
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+              <div class="col-sm-6 col-md-4 text-left">
+  <a href="sell-listing.html" class="thumbnail">
+    <strong class="label label-info pull-right"> Under process </strong>
+    <img src="/assets/img/placeholder-truck.png" alt="Placeholder truck">
+    <div class="caption bg-black text-capitalize">
+      <h4>
+        ₹ 4L - 6L
+
+        <abbr class="no-border tooltip-inverted pull-right" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Flat bed trailer">
+          <span class="icon icon-large icon-flat-bed-trailer" aria-hidden="true"></span>
+        </abbr>
+      </h4>
+      <small>
+        <abbr class="tooltip-inverted" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="The truck is in mint condition"> Nearly new </abbr>
+      </small>
+    </div>
+  </a>
+</div>
+
+            
+
+            <div class="clearfix"></div>
+            <nav aria-label="Page navigation">
+  <ul class="pagination pagination-sm">
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
   </div>
 
   <!-- Pusher for sticky footer -->
   <div class="main-footer"></div>
 </div>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+</script>
 
 <footer class="main-footer bg-black text-capitalize"
   style="margin-bottom: 50px"
