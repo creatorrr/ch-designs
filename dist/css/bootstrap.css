@@ -5883,6 +5883,15 @@ a.label:focus {
   font-size: 6em;
   display: block;
 }
+.thumbnail > .label {
+  font-size: 14px;
+  position: relative;
+  bottom: -3em;
+  right: 1em;
+  line-height: 1.5;
+  margin-top: -2em;
+  z-index: 100;
+}
 .badge {
   display: inline-block;
   min-width: 10px;
